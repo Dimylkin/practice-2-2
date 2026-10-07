@@ -59,7 +59,7 @@ function renderBooks(books: Book[]) {
 
   books.forEach(book => {
     const card = document.createElement('div');
-    card.className = 'book-card';
+    card.classList.add('book-card', 'fade-in');
     
     const titleEl = document.createElement('h3');
     titleEl.textContent = formatBook(book);
